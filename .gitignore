@@ -1,0 +1,8 @@
+
+# Réglages Obsidian et fichiers macOS
+.obsidian/
+.DS_Store
+
+# Documents de référence
+**/References/
+**/Références/
