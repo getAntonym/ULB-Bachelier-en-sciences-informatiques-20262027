@@ -21,6 +21,6 @@ Une même suite de bits peut représenter des informations différentes selon la
 - [3.7 - Sémantique d’une représentation binaire](3.7%20-%20S%C3%A9mantique%20d%E2%80%99une%20repr%C3%A9sentation%20binaire.md)
 - [3.8 - Exercices](3.8%20-%20Exercices.md)
 
-## Suite du cours
+## Pour continuer
 
 [4 - Organisation de l’ordinateur](4%20-%20Organisation%20de%20l%E2%80%99ordinateur.md)

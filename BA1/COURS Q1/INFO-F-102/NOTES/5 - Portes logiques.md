@@ -1,6 +1,6 @@
 # Niveau 0 — Les portes logiques
 
-## 4.1 — L’algèbre booléenne
+## L’algèbre booléenne
 
 Algébre booléenne: Valeur possible : {0, 1}
 
@@ -62,7 +62,7 @@ $$
 S=\overline{A}\cdot B+A\cdot\overline{B}+A\cdot B
 $$
 
-#### Réduction de l'expression
+#### Simplification de l’expression
 
 On factorise les deux derniers termes par $A$ :
 
@@ -91,7 +91,7 @@ $$
 L'expression simplifiée est donc $S=A+B$.
 La sortie vaut 1 dès qu'au moins une des entrées vaut 1.
 
-## 4.2 — Les circuits logiques
+## Les circuits logiques
 
 ### Des transistors aux portes logiques
 
@@ -109,9 +109,9 @@ Transistors (interrupteurs commandés) → portes logiques → circuits de calcu
 
 $\land$ : ET $\lor$ : OU $\neg$ : NON $\oplus$ : XOR (entrées différentes).
 
-## 4.3 — Circuits pour réaliser l’arithmétique binaire
+## Circuits pour réaliser l’arithmétique binaire
 
-### Somme de deux bits : demi-additionneur
+### Demi-additionneur — somme de deux bits
 
 Entrées : $a$, $b$.
 Sorties : somme $s$, retenue $r$.
@@ -132,7 +132,7 @@ La retenue est le bit de poids fort.
 
 > Schéma : une porte XOR et une porte ET
 
-### Somme de trois bits : additionneur complet
+### Additionneur complet — somme de trois bits
 
 Entrées : $a$, $b$, retenue entrante $c$.
 

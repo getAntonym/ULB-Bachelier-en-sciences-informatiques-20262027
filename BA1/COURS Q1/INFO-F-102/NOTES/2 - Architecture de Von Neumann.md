@@ -1,5 +1,5 @@
-# Un premier programme — Architecture de Von Neumann
-## Un  programme Python 
+# Architecture de Von Neumann
+## Un premier programme Python
 
 
 ```python
@@ -25,7 +25,7 @@ else:
     x1 = (-b - sqrt(delta))/(2*a)
     x2 = (-b + sqrt(delta))/(2*a)
 ```
-### Besoins
+### Besoins du programme
 
 1. Entrée de données : `a`, `b`, `c`.
 2. Stocker les données et les résultats des calculs.
@@ -42,7 +42,7 @@ Un modèle est une représentation simplifiée d’un système complexe, qu’on
 
 *Figure 1 — L’architecture de Von Neumann.*
 
-## Définitions
+## Composants du modèle
 
 > [!NOTE]
 > **Processeur — CPU**
@@ -69,5 +69,5 @@ Un modèle est une représentation simplifiée d’un système complexe, qu’on
 > - les données ;
 > - le programme.
 
-## Suite
+## Pour continuer
 [3 - Représentation de l’information](3%20-%20Repr%C3%A9sentation%20de%20l%E2%80%99information.md)

@@ -15,15 +15,15 @@
 3. Le programme peut être modifié.
 4. L’information et le programme sont représentés de façon numérique.
 
-## Histoire et étymologie
+## Origine du mot « ordinateur »
 
-### Origine du mot « ordinateur »
+### Étymologie
 
 En 1955, Jacques Perret propose le mot **ordinateur** à IBM France pour remplacer le terme anglais *computer*.
 
 Il choisit ce mot car il vient du verbe **ordonner** et évoque l’idée d’une machine capable de mettre en ordre, organiser et traiter l’information.
 
-### Ordinateur
+### Caractéristiques essentielles
 
 - Machine qui traite de l’information.
 - Fonctionne en exécutant un **programme**, c’est-à-dire une suite d’instructions.
@@ -37,6 +37,6 @@ Il choisit ce mot car il vient du verbe **ordonner** et évoque l’idée d’un
 >
 > Un ordinateur est une machine programmable qui traite de l’information numérique en exécutant des programmes modifiables.
 
-## Suite
+## Pour continuer
 
 [2 - Architecture de Von Neumann](2%20-%20Architecture%20de%20Von%20Neumann.md)
