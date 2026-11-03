@@ -79,8 +79,7 @@ $$
 On réordonne et on applique la distributivité :
 
 $$
-S=A+\overline{A}\cdot B
-=(A+\overline{A})\cdot(A+B)
+S=A+\overline{A}\cdot B =(A+\overline{A})\cdot(A+B)
 $$
 
 Comme $A+\overline{A}=1$ :
@@ -118,9 +117,7 @@ Entrées : $a$, $b$.
 Sorties : somme $s$, retenue $r$.
 
 $$
-\boxed{s=a\oplus b}
-\qquad
-\boxed{r=a\land b}
+\boxed{s=a\oplus b} \qquad \boxed{r=a\land b}
 $$
 
 | $a$ | $b$ | $r$ | $s$ |
@@ -142,6 +139,8 @@ Entrées : $a$, $b$, retenue entrante $c$.
 $$
 s=a\oplus b\oplus c
 $$
+
+
 
 $$
 r=(a\land b)\lor\bigl((a\oplus b)\land c\bigr)
@@ -190,10 +189,10 @@ gauche /     \ droite
 ```
 
 $$
-S_0=c\land D_1
-\qquad
-S_2=\neg c\land D_1
+S_0=c\land D_1 \qquad S_2=\neg c\land D_1
 $$
+
+
 
 $$
 S_1=(\neg c\land D_0)\lor(c\land D_2)
