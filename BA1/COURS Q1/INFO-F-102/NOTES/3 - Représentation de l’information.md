@@ -23,4 +23,4 @@ Une même suite de bits peut représenter des informations différentes selon la
 
 ## Suite du cours
 
-[04 - Organisation de l’ordinateur](04%20-%20Organisation%20de%20l%E2%80%99ordinateur.md)
+[4 - Organisation de l’ordinateur](4%20-%20Organisation%20de%20l%E2%80%99ordinateur.md)

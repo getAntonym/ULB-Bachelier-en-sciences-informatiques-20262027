@@ -39,4 +39,4 @@ Il choisit ce mot car il vient du verbe **ordonner** et évoque l’idée d’un
 
 ## Suite
 
-[02 - Architecture de Von Neumann](02%20-%20Architecture%20de%20Von%20Neumann.md)
+[2 - Architecture de Von Neumann](2%20-%20Architecture%20de%20Von%20Neumann.md)

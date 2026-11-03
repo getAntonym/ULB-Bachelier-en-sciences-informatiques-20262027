@@ -70,4 +70,4 @@ Un modèle est une représentation simplifiée d’un système complexe, qu’on
 > - le programme.
 
 ## Suite
-[03 - Représentation de l’information](03%20-%20Repr%C3%A9sentation%20de%20l%E2%80%99information.md)
+[3 - Représentation de l’information](3%20-%20Repr%C3%A9sentation%20de%20l%E2%80%99information.md)

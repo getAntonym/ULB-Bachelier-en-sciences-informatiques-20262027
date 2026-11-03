@@ -12,4 +12,4 @@
 
 ---
 
-[← Précédent](03%20-%20Repr%C3%A9sentation%20de%20l%E2%80%99information.md) · [Suite →](4.1%20-%20M%C3%A9moire%20primaire.md)
+[← Précédent](3%20-%20Repr%C3%A9sentation%20de%20l%E2%80%99information.md) · [Suite →](4.1%20-%20M%C3%A9moire%20primaire.md)
