@@ -272,3 +272,7 @@ Syllabus INFO-F102 2026–2027, pages 107–123 (numérotation imprimée).
 ---
 
 [← Précédent](4.3%20-%20Les%20p%C3%A9riph%C3%A9riques.md)
+
+## Pour continuer
+
+[Décodeur](5.1%20-%20D%C3%A9codeur.md)
