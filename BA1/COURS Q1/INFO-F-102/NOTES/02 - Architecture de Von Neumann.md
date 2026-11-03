@@ -38,7 +38,7 @@ else:
 Un modèle est une représentation simplifiée d’un système complexe, qu’on utilise pour mieux le comprendre.
 
 ### Schéma de l’architecture de Von Neumann
-![vonneumann](../REFERENCES/vonneumann.png)
+![vonneumann](../IMAGES/vonneumann.png)
 
 *Figure 1 — L’architecture de Von Neumann.*
 
