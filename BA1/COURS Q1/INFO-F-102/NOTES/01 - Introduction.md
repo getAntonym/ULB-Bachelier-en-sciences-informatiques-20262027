@@ -32,9 +32,11 @@ Il choisit ce mot car il vient du verbe **ordonner** et évoque l’idée d’un
 - Les informations manipulées — texte, image, son, nombres, etc. — ainsi que les programmes sont représentés numériquement.
 - En pratique, cette représentation est **binaire**, avec des `0` et des `1`.
 
-> [!important] Idée essentielle
+> [!IMPORTANT]
+> **Idée essentielle**
+>
 > Un ordinateur est une machine programmable qui traite de l’information numérique en exécutant des programmes modifiables.
 
 ## Suite
 
-[[02 - Architecture de Von Neumann]]
+[02 - Architecture de Von Neumann](02%20-%20Architecture%20de%20Von%20Neumann.md)

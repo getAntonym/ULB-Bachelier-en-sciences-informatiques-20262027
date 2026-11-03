@@ -38,12 +38,15 @@ else:
 Un modèle est une représentation simplifiée d’un système complexe, qu’on utilise pour mieux le comprendre.
 
 ### Schéma de l’architecture de Von Neumann
-![[vonneumann.png|663]]
-Figure 1 — L’architecture de Von Neumann.
+![vonneumann](../REFERENCES/vonneumann.png)
+
+*Figure 1 — L’architecture de Von Neumann.*
 
 ## Définitions
 
-> [!abstract] Processeur — CPU
+> [!NOTE]
+> **Processeur — CPU**
+>
 > Central Processing Unit
 >
 > Composant qui exécute les programmes.
@@ -59,10 +62,12 @@ Figure 1 — L’architecture de Von Neumann.
 > - Unité de contrôle — CU  
 >   Coordonne les registres, l’ALU et l’exécution.
 
-> [!info] Mémoire vive ou primaire — RAM
+> [!NOTE]
+> **Mémoire vive ou primaire — RAM**
+>
 > Stockage pour :
 > - les données ;
 > - le programme.
 
 ## Suite
-[[03 - Représentation de l’information]]
+[03 - Représentation de l’information](03%20-%20Repr%C3%A9sentation%20de%20l%E2%80%99information.md)
