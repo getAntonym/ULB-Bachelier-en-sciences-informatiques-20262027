@@ -19,7 +19,6 @@ Une même suite de bits peut représenter des informations différentes selon la
 - [3.5 - Représentation des instructions](3.5%20-%20Repr%C3%A9sentation%20des%20instructions.md)
 - [3.6 - Détection et correction d’erreurs](3.6%20-%20D%C3%A9tection%20et%20correction%20d%E2%80%99erreurs.md)
 - [3.7 - Sémantique d’une représentation binaire](3.7%20-%20S%C3%A9mantique%20d%E2%80%99une%20repr%C3%A9sentation%20binaire.md)
-- [3.8 - Exercices](3.8%20-%20Exercices.md)
 
 ## Pour continuer
 

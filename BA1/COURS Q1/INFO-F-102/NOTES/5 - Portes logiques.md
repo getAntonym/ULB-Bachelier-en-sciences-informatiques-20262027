@@ -2,15 +2,31 @@
 
 ## L’algèbre booléenne
 
-Algébre booléenne: Valeur possible : {0, 1}
+L’algèbre booléenne manipule deux valeurs, **0 et 1**, interprétées ici comme **faux et vrai**. Elle porte le nom de **George Boole (1815–1864)**.
 
-Opérateurs logiques/ tables de vérité (pas possible dans l'algébre classqiue)
+Les opérateurs logiques sont décrits par des **tables de vérité**. Leurs règles diffèrent de l’arithmétique usuelle : par exemple, le OU logique donne `1 + 1 = 1`.
 
-Georges Bool (1815-1864)
+### Lois booléennes
 
-"Vrai(1) ou faux(0) ?"
+**De Morgan :**
 
+$$
+\neg(A \lor B) = \neg A \land \neg B
+$$
 
+$$
+\neg(A \land B) = \neg A \lor \neg B
+$$
+
+**Distributivité :**
+
+$$
+A \land (B \lor C) = (A \land B) \lor (A \land C)
+$$
+
+$$
+A \lor (B \land C) = (A \lor B) \land (A \lor C)
+$$
 
 ### D’une expression à une table de vérité
 
@@ -93,21 +109,19 @@ La sortie vaut 1 dès qu'au moins une des entrées vaut 1.
 
 ## Les circuits logiques
 
-### Des transistors aux portes logiques
+> [!NOTE]
+> **Transistor**
+>
+> Composant électronique pouvant fonctionner comme un **interrupteur commandé électriquement**.
 
-Un transistor peut être utilisé comme un interrupteur
-commandé électriquement.
+**Transistors → portes logiques → circuits de calcul**
 
-En assemblant des transistors, on construit des portes
-logiques : NON, ET, OU, XOR, etc.
-En assemblant ces portes, on construit des circuits
-capables de réaliser des calculs.
-
-### Des transistors aux circuits
-
-Transistors (interrupteurs commandés) → portes logiques → circuits de calcul.
-
-$\land$ : ET $\lor$ : OU $\neg$ : NON $\oplus$ : XOR (entrées différentes).
+| Symbole | Opération | La sortie vaut 1 si… |
+| :---: | :--- | :--- |
+| ∧ | **ET** | Les deux entrées valent 1 |
+| ∨ | **OU** | Au moins une entrée vaut 1 |
+| ¬ | **NON** | L’entrée vaut 0 |
+| ⊕ | **XOR** | Les deux entrées sont différentes |
 
 ## Circuits pour réaliser l’arithmétique binaire
 
@@ -130,7 +144,17 @@ $$
 Exemple : $1+1=10$ en binaire.
 La retenue est le bit de poids fort.
 
-> Schéma : une porte XOR et une porte ET
+```mermaid
+flowchart LR
+    A["a"] --> X["XOR"]
+    B["b"] --> X
+    A --> E["ET"]
+    B --> E
+    X --> S["s : somme"]
+    E --> R["r : retenue"]
+```
+
+*Schéma fonctionnel du demi-additionneur.*
 
 ### Additionneur complet — somme de trois bits
 
@@ -148,7 +172,19 @@ $$
 
 Construction : deux demi-additionneurs et une porte OU.
 
-> Schéma de l'additionneur complet
+```mermaid
+flowchart LR
+    A["a"] --> H1["Demi-additionneur 1"]
+    B["b"] --> H1
+    H1 -->|"s1"| H2["Demi-additionneur 2"]
+    C["c : retenue entrante"] --> H2
+    H1 -->|"r1"| O["OU"]
+    H2 -->|"r2"| O
+    H2 -->|"s"| S["Somme"]
+    O --> R["Retenue sortante"]
+```
+
+*Schéma fonctionnel : deux demi-additionneurs et une porte OU.*
 
 ### Addition de deux nombres sur quatre bits
 
@@ -166,7 +202,20 @@ chaque retenue passe à la colonne suivante.
 Retenue initiale : 0.
 La retenue finale peut donner un cinquième bit.
 
-> Schéma : quatre additionneurs reliés par leurs retenues
+```mermaid
+flowchart LR
+    C0["c0 = 0"] --> F0["Additionneur complet : a0, b0"]
+    F0 -->|"c1"| F1["Additionneur complet : a1, b1"]
+    F1 -->|"c2"| F2["Additionneur complet : a2, b2"]
+    F2 -->|"c3"| F3["Additionneur complet : a3, b3"]
+    F0 --> S0["s0"]
+    F1 --> S1["s1"]
+    F2 --> S2["s2"]
+    F3 --> S3["s3"]
+    F3 --> C4["c4 : retenue finale"]
+```
+
+*Propagation de la retenue du bit de poids faible vers le bit de poids fort.*
 
 ### Circuit de décalage logique
 
@@ -198,7 +247,27 @@ $$
 S_1=(\neg c\land D_0)\lor(c\land D_2)
 $$
 
-> Schéma du circuit de décalage
+```mermaid
+flowchart LR
+    D1["D1"] --> E0["ET"]
+    C["c"] --> E0
+    E0 --> S0["S0"]
+    C --> N["NON"]
+    N --> E2["ET"]
+    D1 --> E2
+    E2 --> S2["S2"]
+    D0["D0"] --> M["Sélecteur : D0 si c=0 ; D2 si c=1"]
+    D2["D2"] --> M
+    C --> M
+    M --> S1["S1"]
+```
+
+*Schéma fonctionnel correspondant aux équations ci-dessus. Le bloc central est un multiplexeur 2 vers 1.*
+
+
+## Référence
+
+Syllabus INFO-F102 2026–2027, pages 107–123 (numérotation imprimée).
 
 ---
 

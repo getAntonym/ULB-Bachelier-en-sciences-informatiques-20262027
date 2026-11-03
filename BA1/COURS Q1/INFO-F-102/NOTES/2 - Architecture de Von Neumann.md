@@ -15,16 +15,25 @@ a = float(input("valeur de a : "))
 b = float(input("valeur de b : "))  # Entrée de données
 c = float(input("valeur de c : "))
 
-delta = b**2 - 4*a*c
-
-if delta < 0:
-    print("Pas de racines reelles")
-elif delta == 0:
-    print("Une solution reelle : x = ", -b/(2*a))
+if a == 0:
+    print("a doit être non nul pour une équation du second degré.")
 else:
-    x1 = (-b - sqrt(delta))/(2*a)
-    x2 = (-b + sqrt(delta))/(2*a)
+    delta = b**2 - 4*a*c
+
+    if delta < 0:
+        print("Pas de racines reelles")
+    elif delta == 0:
+        print("Une solution reelle : x = ", -b/(2*a))
+    else:
+        x1 = (-b - sqrt(delta))/(2*a)
+        x2 = (-b + sqrt(delta))/(2*a)
+        print("Deux solutions reelles : x1 =", x1, "; x2 =", x2)
 ```
+> [!NOTE]
+> **Hypothèse de l’exemple**
+>
+> Le programme suppose des entrées numériques valides. Le cas `a = 0` est signalé, sans résoudre une éventuelle équation du premier degré.
+
 ### Besoins du programme
 
 1. Entrée de données : `a`, `b`, `c`.
